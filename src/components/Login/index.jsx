@@ -3,6 +3,14 @@ import { FacebookFilled, GoogleOutlined, TwitterOutlined } from '@ant-design/ico
 import './index.css'
 
 const Login = () => {
+
+    const dispatch = useDispatch();
+
+    const handleLoginClick = () => {
+      dispatch({
+        type: "user/login"
+      })
+    }
     return (
         <div>
             <Form className='loginForm'>
