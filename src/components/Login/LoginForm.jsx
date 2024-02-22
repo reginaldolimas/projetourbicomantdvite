@@ -1,5 +1,6 @@
 import { Form, Typography, Button, Divider } from 'antd';
 import { FacebookFilled, GoogleOutlined, TwitterOutlined } from '@ant-design/icons';
+import PropTypes from 'prop-types';
 import './index.css'
 
 const LoginForm = ({ onFinish, loading }) => {
@@ -26,4 +27,8 @@ const LoginForm = ({ onFinish, loading }) => {
     )
 }
 
+LoginForm.propTypes = {
+    onFinish: PropTypes.func.isRequired, // `onFinish` deve ser uma função e é obrigatório
+    loading: PropTypes.bool.isRequired, // `loading` deve ser um booleano e é obrigatório
+};
 export default LoginForm;

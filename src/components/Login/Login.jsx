@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import LoginForm from './LoginForm';
-import useAuthentication from './useAuthentication';
+import useAuthentication from './useAuthenticationHook';
 
-const index = () => {
+const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { loading,  login } = useAuthentication();
@@ -24,4 +24,4 @@ const index = () => {
   return <LoginForm onFinish={onFinish} loading={loading} />;
 };
 
-export default index;
+export default Login;

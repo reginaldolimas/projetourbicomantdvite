@@ -1,6 +1,6 @@
 import './App.css';
 import 'antd/dist/reset.css';
-import Login from './components/Login';
+import Login from './components/Login/Login';
 import { Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
